@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Movie({id, title, summary, poster, year, rating}){
-  return <h1>{title}</h1>;
+function Movie({title, summary, poster, year, rating}){
+  return <h1>Title: {title}</h1>;
 }
 
-Movie.PropTypes = {
-  id: PropTypes.number.isRequired,
+Movie.propTypes = {
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
