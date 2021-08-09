@@ -5,8 +5,8 @@ import './Navigation.css';
 function Navigation(){
   return (
     <div className="nav">
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
+      <div className="navi home"><Link to="/">Home</Link></div>
+      <div className="navi about"><Link to="/about">About</Link></div>
     </div>
   );
 }
